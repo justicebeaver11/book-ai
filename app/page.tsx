@@ -13,16 +13,21 @@ import { FaHome } from "react-icons/fa";
 export default function Home() {
   return (
     <main className="relative bg-black-100 flex sm:px-10 overflow-clip justify-center items-center flex-col  mx-5 px-5">
+       
+      
       <div className="w-full max-w-xl">
         <h1>
-          <FloatingNav navItems={navItems}/>
+     
+          <FloatingNav navItems={navItems} />
           <Hero />
+          
           
           <Card />
           
           <Clients />
           <Pricing />
           <Footer />
+          
         </h1>
       </div>
      
