@@ -15,7 +15,7 @@ const Pricing = () => {
       <Card
         title="GPT-3.5 API: OpenAI"
         icon={<AceternityIcon order="Model-1" />}
-        des="GPT-3.5 Turbo models can understand and generate natural language or code and have been optimized for chat using the Chat Completions API but work well for non-chat tasks."
+        //des="GPT-3.5 Turbo models can understand and generate natural language or code and have been optimized for chat using the Chat Completions API but work well for non-chat tasks."
         pricing='Price per 1K tokens: $0.002'
       >
         <CanvasRevealEffect
@@ -31,7 +31,7 @@ const Pricing = () => {
       <Card
         title="GPT-4.0 API: OpenAI"
         icon={<AceternityIcon order="Model-2" />}
-        des="GPT-4 is a creative and collaborative model. It can generate, edit, and iterate with users on creative and technical writing tasks, such as composing songs etc."
+       // des="GPT-4 is a creative and collaborative model. It can generate, edit, and iterate with users on creative and technical writing tasks, such as composing songs etc."
         pricing='Price per 1K tokens: $0.03'
       >
         <CanvasRevealEffect
@@ -50,7 +50,7 @@ const Pricing = () => {
       <Card
         title="Llama-2-70b API: Together AI"
         icon={<AceternityIcon order="Model-3" />}
-        des="LLaMA-2-70B is a LLM developed by Meta AI, part of LLaMa-2 series,with 70 billion parameters, it is designed to perform natural language processing tasks."
+       // des="LLaMA-2-70B is a LLM developed by Meta AI, part of LLaMa-2 series,with 70 billion parameters, it is designed to perform natural language processing tasks."
         pricing='Price per 1K tokens: $0.0008'
       >
         <CanvasRevealEffect
@@ -69,7 +69,7 @@ const Pricing = () => {
       <Card
         title="Llama-2-13b API: Together AI"
         icon={<AceternityIcon order="Model-4" />}
-        des="LLaMA-2-13B is powerful version of Meta AI's LLaMA-2 series, with 13 billion parameters. It balances performance and efficiency, making it well-suited for natural language processing tasks."
+       // des="LLaMA-2-13B is powerful version of Meta AI's LLaMA-2 series, with 13 billion parameters. It balances performance and efficiency, making it well-suited for natural language processing tasks."
         pricing='Price per 1K tokens: $0.0006'
       >
         <CanvasRevealEffect
@@ -89,13 +89,13 @@ const Card = ({
 title,
 icon,
 children,
-des,
+//des,
 pricing,
 }: {
 title: string;
 icon: React.ReactNode;
 children?: React.ReactNode;
-des: string;
+//des: string;
 pricing:string;
 }) => {
 const [hovered, setHovered] = React.useState(false);
@@ -156,14 +156,14 @@ return (
           {pricing}
         </p>
      
-      <p
+      {/* <p
         className="text-sm opacity-0 group-hover/canvas-card:opacity-100
        relative z-10 mt-4 group-hover/canvas-card:text-white text-center
        group-hover/canvas-card:-translate-y-2 transition duration-200"
         style={{ color: "#E4ECFF" }}
       >
         {des}
-      </p>
+      </p> */}
     </div>
   </div>
 );
